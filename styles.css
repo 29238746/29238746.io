@@ -1,11 +1,6 @@
-/* jebac genshina */
-
-
 @font-face {
-    font-family: 'pixel_unicoderegular';
-    src: url('../pixel-unicode-webfont.woff2') format('woff2'),
-         url('../pixel-unicode-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: Pixel-UniCode;
+    src: url("../../Pixel-UniCode.tff") format('truetype');
+    font-weight: bold;
     font-style: normal;
-
 }
