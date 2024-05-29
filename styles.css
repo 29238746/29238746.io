@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Pixel UniCode';
-    src: url('Pixel-UniCode.woff2') format('woff2'),
-        url('Pixel-UniCode.woff') format('woff'),
-        url('Pixel-UniCode.ttf') format('truetype');
+    src: url('./Pixel-UniCode.woff2') format('woff2'),
+        url('./Pixel-UniCode.woff') format('woff'),
+        url('./Pixel-UniCode.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
