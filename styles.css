@@ -15,3 +15,7 @@ h1 {
   font-family: Pixelify Sans, sans-serif;
   font-style: normal;
 }
+
+.form {
+ display: inline;
+}
