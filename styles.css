@@ -17,6 +17,7 @@ h1 {
 }
 
 .form {
-font-family: 'pixel_unicode';
+ font-family: 'pixel_unicode';
  display: inline;
+font-size: 1em;
 }
