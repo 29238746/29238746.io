@@ -9,13 +9,65 @@
         		}
 input[type='submit'] { font-size: 30px; font-family: 'pixel_unicode'; }
 
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
             </style>
 </head>
 <body>
  <center>
-<form action="/rena">
-    <input type="submit" value="rena uwu" />
+<form action="./huj">
+    <input type="submit" value="powrut" />
  </center>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://cdn.discordapp.com/attachments/1148644459228172399/1246439597324632105/f0d4e7daa552791b9b5c9d1e4462647a.jpg?ex=665c64d5&is=665b1355&hm=33994963e6ab58d6a71f10b735564e321b75a1dd7c54d6a47082db5c730d0f76&" alt="baller" width="600" height="400">
+    </a>
+</div>
 </form>
 </body>
 </html>
