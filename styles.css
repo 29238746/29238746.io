@@ -34,7 +34,7 @@ div.gallery img {
 }
 
 .responsive {
-  padding: 0 6px;
+  padding: 0 0;
   float: left;
   width: 24.99999%;
 }
@@ -42,7 +42,7 @@ div.gallery img {
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 0 0;
   }
 }
 
