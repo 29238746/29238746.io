@@ -9,42 +9,6 @@
         		}
 input[type='submit'] { font-size: 30px; font-family: 'pixel_unicode'; }
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
             </style>
 </head>
 <body>
@@ -54,31 +18,17 @@ div.gallery img {
 </form>
  </center>
 
-<!-- responsive gallery -->
-
-<div class="responsive">
-  <div class="gallery">
-      <img src="./1.png" alt="baller" width="600" height="400">
-    </a>
-</div>
-<div class="responsive">
-  <div class="gallery">
-      <img src="./2.png" alt="baller" width="600" height="400">
-    </a>
-</div>
-<div class="responsive">
-  <div class="gallery">
-      <img src="./3.png" alt="baller" width="600" height="400">
-    </a>
-</div>
-<div class="responsive">
-  <div class="gallery">
-      <img src="./4.png" alt="baller" width="600" height="400">
-    </a>
-</div>
-<!-- responsive gallery -->
-<div class="clearfix"></div>
-<!-- responsive gallery -->
+<div class="row">
+  <div class="column">
+    <img src="./1.png">
+    <img src="./2.png">
+    <img src="./3.png">
+    <img src="./4.png">
+    <img src="nature.jpg">
+    <img src="mist.jpg">
+    <img src="paris.jpg">
+  </div>
+  </div>
 
 </body>
 </html>
