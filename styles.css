@@ -57,3 +57,10 @@ div.gallery img {
   display: table;
   clear: both;
 }
+
+div.gallery {
+  padding-bottom: 50px;
+}
+
+
+
