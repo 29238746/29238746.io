@@ -52,10 +52,3 @@ div.gallery img {
   }
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
