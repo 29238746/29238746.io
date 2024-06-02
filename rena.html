@@ -21,17 +21,23 @@
             margin: 20px;
         }
         .gallery .image-container {
-            flex: 1 1 200px; /* Grow and shrink as needed, minimum width 200px */
+            flex: 1 1 calc(33.333% - 20px); /* Three images per row, adjust as needed */
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden; /* Hide any overflow from images */
+            overflow: hidden;
+            position: relative;
+            width: calc(33.333% - 20px); /* Adjust for the gap */
+            padding-top: 33.333%; /* Maintain aspect ratio */
             border-radius: 11px;
         }
-        .gallery img {
+        .gallery .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensure the image covers the container */
+            object-fit: cover;
         }
     </style>
 </head>
