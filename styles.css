@@ -14,4 +14,7 @@ h1 {
   font-style: normal;
 }
 
+.button-container {
+    margin-bottom: 10px; /* Dowolny odstęp między przyciskami (np. 10px) */
+}
 
