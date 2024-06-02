@@ -10,28 +10,30 @@
 			font-family: 'pixel_unicode';
         		}
 label[type='password'] { font-size: 30px; font-family: 'pixel_unicode'; }
-button[type='submit'] { font-size: 30px; font-family: 'pixel_unicode'; }
+button[type='submit'] { font-size: 20px; font-family: 'pixel_unicode'; }
 
             </style>
-    <title>Password Redirect Form</title>
+    <title>uwu</title>
     <script>
         function checkPassword(event) {
             event.preventDefault(); // Prevent the form from submitting the traditional way
             var password = document.getElementById("password").value;
-            if (password === "0606") {
+            if (password === "2903") {
                 window.location.href = "https://www.example.com"; // Replace with your desired URL
             } else {
-                alert("Incorrect password. Please try again.");
+                document.getElementById("errorSound").play();
             }
         }
     </script>
 </head>
 <body>
-    <h2>Password Protected Page</h2>
+    <h2>seks</h2>
+<h3>podpowiedz: data kiedy sie poznalismy</h3>
     <form onsubmit="checkPassword(event)">
-        <label for="password">Enter Password:</label>
+        <label for="password">podaj haslo</label>
         <input type="password" id="password" name="password" required>
-        <button type="submit">Submit</button>
+        <button type="submit">ok</button>
     </form>
+    <audio id="errorSound" src="nie,ogg"></audio> <!-- Replace with the path to your .ogg sound file -->
 </body>
 </html>
