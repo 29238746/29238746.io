@@ -16,24 +16,22 @@
         /* Styles for the gallery */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: 10px;
+            grid-gap: 10px;
             margin: 20px;
+            padding: 0;
         }
         .gallery .image-container {
             position: relative;
             width: 100%;
-            padding-top: 75%; /* Adjust padding-top to a more flexible aspect ratio */
             overflow: hidden;
             border-radius: 11px;
         }
         .gallery img {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            object-fit: contain; /* Maintain original aspect ratio and fit within container */
+            height: auto;
+            display: block;
         }
     </style>
 </head>
