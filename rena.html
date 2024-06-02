@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +15,6 @@
         }
         /* Styles for the gallery */
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-auto-rows: 10px;
-            grid-gap: 10px;
             margin: 20px;
             padding: 0;
         }
@@ -27,6 +23,7 @@
             width: 100%;
             overflow: hidden;
             border-radius: 11px;
+            margin-bottom: 10px;
         }
         .gallery img {
             width: 100%;
@@ -69,5 +66,16 @@
         </div>
         <!-- Add more image containers as needed -->
     </div>
+
+    <!-- Masonry.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        var elem = document.querySelector('.gallery');
+        var masonry = new Masonry(elem, {
+            itemSelector: '.image-container',
+            columnWidth: '.image-container',
+            gutter: 10
+        });
+    </script>
 </body>
 </html>
